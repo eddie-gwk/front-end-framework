@@ -2,15 +2,28 @@ import globals from "globals";
 import pluginJs from "@eslint/js";
 import tseslint from "typescript-eslint";
 import pluginVue from "eslint-plugin-vue";
+import tsParser from "@typescript-eslint/parser";
+import vueParser from "vue-eslint-parser";
 
 
 export default [
     {
-        languageOptions: {globals: {...globals.browser, ...globals.node, ...globals.es2015}},
+        languageOptions: {
+            globals: {...globals.browser, ...globals.node, ...globals.es2015},
+        },
     },
     pluginJs.configs.recommended,
     ...tseslint.configs.recommended,
     ...pluginVue.configs["flat/recommended"],
+    {
+        //此处配置用来解决 解析vue中ts代码时的报错
+        languageOptions: {
+            parser: vueParser,
+            parserOptions: {
+              parser: tsParser
+            },
+        },
+    },
     {
         ignores:["*.sh", "node_modules", "*.md", "*.woff", "*.ttf", ".idea", "dist", "/public", "/docs", ".husky", ".local", "/bin", "/src/mock/*", "stats.html"],
         rules: {
@@ -20,7 +33,7 @@ export default [
 
             // typeScript (https://typescript-eslint.io/rules)
             "@typescript-eslint/no-unused-vars": "error", // 禁止定义未使用的变量
-            "@typescript-eslint/no-empty-function": "error", // 禁止空函数
+            "@typescript-eslint/no-empty-function": "off", // 禁止空函数
             "@typescript-eslint/prefer-ts-expect-error": "error", // 禁止使用 @ts-ignore
             "@typescript-eslint/ban-ts-comment": "error", // 禁止 @ts-<directive> 使用注释或要求在指令后进行描述
             "@typescript-eslint/no-inferrable-types": "off", // 可以轻松推断的显式类型可能会增加不必要的冗长

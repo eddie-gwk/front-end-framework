@@ -21,11 +21,14 @@
     }
   },
   "dependencies": {
-    "vue": "^3.4.21"
+    "@typescript-eslint/parser": "^7.12.0",
+    "vue": "^3.4.21",
+    "vue-eslint-parser": "^9.4.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.4.0",
     "@types/eslint__js": "^8.42.3",
+    "@typescript-eslint/eslint-plugin": "^7.12.0",
     "@vitejs/plugin-vue": "^5.0.4",
     "commitizen": "^4.3.0",
     "cz-git": "^1.9.2",
@@ -49,7 +52,7 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx,vue,ts,tsx}": [
-      "eslint --ext .js,.jsx,.vue,.ts,.tsx src --fix"
+      "eslint ./src --fix"
     ]
   }
 }
