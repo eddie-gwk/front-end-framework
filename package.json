@@ -22,16 +22,20 @@
 	},
 	"dependencies": {
 		"@typescript-eslint/parser": "^7.12.0",
+		"cz-git": "^1.9.2",
+		"fs": "0.0.1-security",
+		"punycode": "^2.3.1",
 		"vue": "^3.4.21",
 		"vue-eslint-parser": "^9.4.3"
 	},
 	"devDependencies": {
+		"@commitlint/cli": "^19.3.0",
+		"@commitlint/config-conventional": "^19.2.2",
 		"@eslint/js": "^9.4.0",
 		"@types/eslint__js": "^8.42.3",
 		"@typescript-eslint/eslint-plugin": "^7.12.0",
 		"@vitejs/plugin-vue": "^5.0.4",
 		"commitizen": "^4.3.0",
-		"cz-git": "^1.9.2",
 		"eslint": "~9.4.0",
 		"eslint-plugin-vue": "^9.26.0",
 		"globals": "^15.3.0",
