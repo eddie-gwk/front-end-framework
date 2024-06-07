@@ -46,5 +46,10 @@
     "typescript-eslint": "^7.12.0",
     "vite": "^5.2.0",
     "vue-tsc": "^2.0.6"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,vue,ts,tsx}": [
+      "eslint --ext .js,.jsx,.vue,.ts,.tsx src --fix"
+    ]
   }
 }
