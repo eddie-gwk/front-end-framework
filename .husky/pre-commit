@@ -1,1 +1,3 @@
 echo "温馨提醒：请您确保代码已经格式化并且通过了lint检查（npm run CheckAll）在提交代码奥~！"
+
+npm lint:lint-staged
