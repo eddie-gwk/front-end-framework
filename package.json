@@ -5,13 +5,18 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
+		"server": "vite",
+		"build:dev": "vue-tsc && vite build --mode development",
+		"build:test": "vue-tsc && vite build --mode test",
+		"build:pro": "vue-tsc && vite build --mode production",
+		"type:check": "vue-tsc --noEmit --skipLibCheck",
 		"build": "vue-tsc && vite build",
-		"preview": "vite preview",
+		"preview": "npm run build:dev && vite preview",
 		"lint:eslint": "eslint ./src --fix",
 		"lint:prettier": "prettier --write \"src/**/*.{js,ts,json,tsx,css,less,scss,vue,html,md}\"",
 		"lint:stylelint": "stylelint --cache --fix \"**/*.{vue,less,postcss,css,scss}\" --cache --cache-location node_modules/.cache/stylelint/",
 		"lint:lint-staged": "lint-staged",
-		"prepare": "husky",
+		"prepare": "husky install",
 		"commit": "git add -A && cz"
 	},
 	"config": {
