@@ -27,8 +27,10 @@
 	},
 	"dependencies": {
 		"@typescript-eslint/parser": "^7.12.0",
+		"autoprefixer": "^10.4.19",
 		"cz-git": "^1.9.2",
 		"fs": "0.0.1-security",
+		"postcss": "^8.4.38",
 		"punycode": "^2.3.1",
 		"vue": "^3.4.21",
 		"vue-eslint-parser": "^9.4.3"
