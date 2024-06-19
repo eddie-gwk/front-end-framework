@@ -1,9 +1,31 @@
-# Vue 3 + TypeScript + Vite
+# Basic Project Framework
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+---
 
-## Recommended Setup
+### introduce
 
-- [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (previously Volar) and disable Vetur
+This is a basic project framework that utilizes Vite for the construction framework, Vue as the base front-end framework, and TypeScript as the development language.
 
-- Use [vue-tsc](https://github.com/vuejs/language-tools/tree/master/packages/tsc) for performing the same type checking from the command line, or for generating d.ts files for SFCs.
+Integrated with the latest plugins:
+
+- **ESLint**: A tool for finding and fixing problems in your JavaScript code.
+- **Prettier**: An opinionated code formatter.
+- **Stylelint**: A mighty CSS linter that helps you avoid errors and enforce conventions.
+- **Commitlint**: Commitlint checks if your commit messages meet the conventional commit format.
+- **PostCSS**: PostCSS is a tool for transforming styles with JS plugins.
+
+### Usage
+
+After pulling the code to the local, you will get a well-configured project. Use the following commands to start:
+
+1. `pnpm i` - Install dependencies.
+2. `pnpm run dev` - Start the development server.
+
+Subsequent code development can be carried out on this basis.
+
+---
+
+### language
+
+- <a href="/README.md">English</a>
+- <a href="/README_zh.md">中文</a>
