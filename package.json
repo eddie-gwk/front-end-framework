@@ -27,13 +27,23 @@
 	},
 	"dependencies": {
 		"@typescript-eslint/parser": "^7.12.0",
+		"@vitejs/plugin-vue-jsx": "^4.0.0",
 		"autoprefixer": "^10.4.19",
 		"cz-git": "^1.9.2",
+		"dayjs": "^1.11.11",
 		"fs": "0.0.1-security",
 		"postcss": "^8.4.38",
 		"punycode": "^2.3.1",
+		"rollup-plugin-visualizer": "^5.12.0",
+		"unplugin-vue-setup-extend-plus": "^1.0.1",
+		"vite-plugin-compression": "^0.5.1",
+		"vite-plugin-eslint": "^1.8.1",
+		"vite-plugin-html": "^3.2.2",
+		"vite-plugin-pwa": "^0.20.0",
+		"vite-plugin-svg-icons": "^2.0.1",
 		"vue": "^3.4.21",
-		"vue-eslint-parser": "^9.4.3"
+		"vue-eslint-parser": "^9.4.3",
+		"vue-i18n": "^9.13.1"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^19.3.0",
@@ -41,7 +51,7 @@
 		"@eslint/js": "^9.4.0",
 		"@types/eslint__js": "^8.42.3",
 		"@typescript-eslint/eslint-plugin": "^7.12.0",
-		"@vitejs/plugin-vue": "^5.0.4",
+		"@vitejs/plugin-vue": "^5.0.5",
 		"commitizen": "^4.3.0",
 		"eslint": "~9.4.0",
 		"eslint-plugin-vue": "^9.26.0",
